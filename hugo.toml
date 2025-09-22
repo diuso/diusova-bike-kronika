@@ -1,0 +1,4 @@
+baseURL = 'https://bike.diuso.eu/'
+languageCode = 'en-us'
+title = 'My Bike Adventures'
+theme = 'hugo-split-gallery'
