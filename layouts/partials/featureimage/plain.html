@@ -1,0 +1,53 @@
+{{/* Initialize cover link as false */}}
+{{ $linkToCover := false }}
+
+{{/* Safely check if we have a valid context and Params with "images" */}}
+{{ if and . (isset . "Params") (isset .Params "images") }}
+  {{ $featured_images := .Param "images" }}
+  {{ if $featured_images }}
+      {{ $page := partial "getdefaultlangpage.html" . }}
+
+      {{ $includeOriginalImage := default true (cond (and $page (isset $page "Params") (isset $page.Params "includeOriginalImage")) ($page.Param "includeOriginalImage") nil) }}
+      {{ $largeImageSize := default "2000x" (cond (and $page (isset $page "Params") (isset $page.Params "largeImageSize")) ($page.Param "largeImageSize") nil) }}
+
+      {{ $img := cond $page ($page.Resources.GetMatch (index $featured_images 0)) nil }}
+      {{ if $img }}
+          {{ if not $includeOriginalImage }}
+              {{ $img = $img.Resize $largeImageSize }}
+          {{ end }}
+          {{ $linkToCover = $img.Permalink }}
+      {{ end }}
+
+      {{ if not $linkToCover }}
+          {{ $headlessBundle := partial "featureimage/shared.html" . }}
+          {{ with .Site.GetPage $headlessBundle }}
+              {{ $img := .Resources.GetMatch (index $featured_images 0) }}
+              {{ if $img }}
+                  {{ if not $includeOriginalImage }}
+                      {{ $img = $img.Resize $largeImageSize }}
+                  {{ end }}
+                  {{ $linkToCover = $img.Permalink }}
+              {{ end }}
+          {{ end }}
+      {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* If still no cover, use fallback default image */}}
+{{ if not $linkToCover }}
+  {{ $linkToCover = "/images/default.jpg" }}
+
+  {{ if . }}
+    {{ if and (isset . "RelPermalink") (isset . "Kind") }}
+      {{ warnf "Could not find featured image for %s (%s)" .RelPermalink .Kind }}
+    {{ else if (isset . "Kind") }}
+      {{ warnf "Could not find featured image for page kind %s" .Kind }}
+    {{ else }}
+      {{ warnf "Could not find featured image (unknown page context)" }}
+    {{ end }}
+  {{ else }}
+    {{ warnf "Could not find featured image (nil context)" }}
+  {{ end }}
+{{ end }}
+
+{{ return $linkToCover }}
