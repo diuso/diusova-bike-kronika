@@ -1,3 +1,0 @@
----
-title: "My ski sessions"
----
