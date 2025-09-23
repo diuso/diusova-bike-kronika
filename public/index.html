@@ -121,6 +121,107 @@
   
     
       
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
         
       
     
@@ -207,6 +308,9 @@
   
   
 
+  
+  
+
 <script>
 $(document).ready(function() {
 initMap();
@@ -215,6 +319,130 @@ initMap();
   
   
   function load_0 () {
+    var tracks = [];
+    var markers = [];
+    var latlngs = [];
+
+    
+
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+
+    if (latlngs.length > 0) {
+      var pagebounds = L.latLngBounds(latlngs);
+      addBounds(pagebounds);
+      if (tracks.length === 0) {
+        markers.push([
+          pagebounds.getCenter(),
+           0 ,
+          '<strong><a href="http:\/\/localhost:1313\/events\/2024-07-slovinsko\/">2024 07 Slovinsko</a></strong>',
+        ]);
+      }
+    }
+
+    add(tracks, markers,  0 );
+  }
+
+  load_0();
+
+  
+  
+  function load_1 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -253,20 +481,20 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           0 ,
+           1 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2025-06-slovinsko\/">2025 06 05 Slovinsko</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  0 );
+    add(tracks, markers,  1 );
   }
 
-  load_0();
+  load_1();
 
   
   
-  function load_1 () {
+  function load_2 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -329,16 +557,16 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           1 ,
+           2 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2025-08-27-polsko\/">2025 08 27 Polsko</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  1 );
+    add(tracks, markers,  2 );
   }
 
-  load_1();
+  load_2();
 
 finalizeMap();
 });
@@ -363,6 +591,19 @@ finalizeMap();
 
 
 <ul style="columns: 1;">
+    
+        
+            <li>
+                <a href="http://localhost:1313/events/2024-07-slovinsko/">
+                2025-09-23 | 
+                
+                    2024 07 Slovinsko
+                
+                </a>
+                
+            
+            </li>
+        
     
         
             <li>
@@ -445,6 +686,21 @@ finalizeMap();
         <div class="row h-100 p-0">
             <div class="col my-auto p-0">
                 <ul class="split-grid list-unstyled">
+                    
+                        
+                        
+                            
+                            
+                            
+                            <li>
+                                <a href="http://localhost:1313/events/2024-07-slovinsko/"  title="2024 07 Slovinsko">
+                                    
+                                        
+                                        2024 07 Slovinsko
+                                    
+                                </a>
+                            </li>
+                        
                     
                         
                         
