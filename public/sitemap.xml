@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/events/2025-06-slovinsko/</loc>
-    <lastmod>2025-09-22T22:33:37+02:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/events/</loc>
-    <lastmod>2025-09-22T22:33:37+02:00</lastmod>
+    <lastmod>2025-09-23T22:33:37+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-23T22:33:37+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/events/2025-06-slovinsko/</loc>
     <lastmod>2025-09-22T22:33:37+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/events/2025-08-27-polsko/</loc>
