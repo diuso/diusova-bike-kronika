@@ -135,9 +135,139 @@
 
   
     
+      
+    
   
 
   
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
     
   
 
@@ -145,91 +275,241 @@
     
   
 
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
 
 
+  
+  
+  
+
+  <div id="mapid" style="width: 100%; height: 50vh;" class="mb-1"></div>
+  
+  
+  
+  <script>
+    $(document).ready(function() {
+      initMap();
+      var tracks = [];
+      var markers = [];
+
+      
+
+      
+        
+          
+            markers.push([
+              L.latLng( 46.497475 ,  15.255588888888889 ),
+               0 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.49582777777778 ,  15.253913888888889 ),
+               1 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.48843055555556 ,  15.230291666666666 ),
+               2 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.51621388888889 ,  15.056641666666668 ),
+               3 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.48531666666667 ,  14.962674999999999 ),
+               4 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.525213888888885 ,  14.85675 ),
+               5 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.50047222222222 ,  14.80836388888889 ),
+               6 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.47730833333333 ,  14.792033333333332 ),
+               7 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.48393611111111 ,  14.783422222222223 ),
+               8 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.45421666666667 ,  14.74631111111111 ),
+               9 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.44981111111111 ,  14.735416666666666 ),
+               10 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.42665833333333 ,  14.63725 ),
+               11 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.41705555555556 ,  14.6409 ),
+               12 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.38363611111111 ,  14.621400000000001 ),
+               13 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.29546388888889 ,  14.806225000000001 ),
+               14 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.26346111111111 ,  14.818380555555555 ),
+               15 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.25638611111111 ,  14.830786111111111 ),
+               16 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.22354166666667 ,  15.014761111111111 ),
+               17 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.17845277777778 ,  15.018500000000001 ),
+               18 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.18133333333333 ,  15.107169444444445 ),
+               19 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.09091111111111 ,  15.157183333333334 ),
+               20 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.09269722222223 ,  15.066641666666667 ),
+               21 ,
+            ]);
+          
+        
+      
+        
+          
+            markers.push([
+              L.latLng( 46.087922222222225 ,  15.072463888888889 ),
+               22 ,
+            ]);
+          
+        
+      
+        
+          
+        
+      
+
+      add(tracks, markers);
+      finalizeMap();
+    });
+  </script>
 
 
 
@@ -447,184 +727,184 @@
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_082048115.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_082048115.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_082048115_hu_43accbcd2b3c151.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_082048115_hu_b809b2a4c8d06725.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_082048115.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_082048115_hu_7c62bd022c69cb4c.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_082048115_hu_cc7cabc69a5e562c.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_085018835.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_085018835.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_085018835_hu_e8945188d4b730e.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_085018835_hu_48a943066304ddb2.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_085018835.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_085018835_hu_c623305c30849b60.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_085018835_hu_78469802131b0e9.jpg" /></a></li>
             
           
             
             
             
-              <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_102228897.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_102228897.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_102228897_hu_78b84630a456717b.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_102228897_hu_2fdb66e133d3f95c.jpg" /></a></li>
+              <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_102228897-1.jpg"
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_102228897-1.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_102228897-1_hu_82f0deae7e8ea43d.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_102228897-1_hu_46d8c1c75f9226f1.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_123846245_HDR.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_123846245_HDR.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_123846245_HDR_hu_96d89ab91d263235.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_123846245_HDR_hu_d46763aad641e6f9.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_123846245_HDR.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_123846245_HDR_hu_e2958cab328754b7.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_123846245_HDR_hu_e0f48e2f1901f086.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_172752845.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_172752845.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_172752845_hu_75c2aa8282fbd2ec.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_172752845_hu_734e3b43a91b85d2.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_172752845.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_172752845_hu_412bfd2db4f78304.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_172752845_hu_879fcbe95f24562d.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_190407046.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_190407046.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_190407046_hu_1dfad01bd76d3785.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_190407046_hu_6bea71b26553b692.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_190407046.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_190407046_hu_1665aca7c156a4f1.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240721_190407046_hu_4bdd6b79a7f2c02f.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240722_134502345_HDR.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240722_134502345_HDR.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240722_134502345_HDR_hu_b91d949d82088f09.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240722_134502345_HDR_hu_74ef731ebc44d895.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240722_134502345_HDR.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240722_134502345_HDR_hu_ca1ceaa739e0c73a.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240722_134502345_HDR_hu_548208f1b503cf06.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_091251624_HDR.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_091251624_HDR.jpg 1736w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_091251624_HDR_hu_cfa580e2658422be.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_091251624_HDR_hu_73538216592462e4.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_091251624_HDR.jpg 1736w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_091251624_HDR_hu_3a0518fd0cc2d8cc.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_091251624_HDR_hu_713a6870fa11e203.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_091600105_HDR.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_091600105_HDR.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_091600105_HDR_hu_ffa72b18d14b9b2f.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_091600105_HDR_hu_927e57459c631f1e.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_091600105_HDR.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_091600105_HDR_hu_f772944375beb80f.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_091600105_HDR_hu_b1a3dc1503011c2b.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_135743969.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_135743969.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_135743969_hu_1a63dab765ef04dd.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_135743969_hu_cb124ba6d942745c.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_135743969.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_135743969_hu_6be0f5cad1e9418d.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_135743969_hu_20798e791da867e.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_142946353_HDR_cr.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_142946353_HDR_cr.jpg 2299w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_142946353_HDR_cr_hu_fb9198e853a01799.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_142946353_HDR_cr_hu_3ba353583c41d04e.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_142946353_HDR_cr.jpg 2299w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_142946353_HDR_cr_hu_1e4a8e5c08372107.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_142946353_HDR_cr_hu_a12d90ed0dc4fc23.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_192417291.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_192417291.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_192417291_hu_d777bd68baa97c16.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_192417291_hu_7202bf292df33565.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_192417291.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_192417291_hu_a4ae5195d326bd33.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_192417291_hu_fb2f8c1ec8589962.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_194405405.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_194405405.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_194405405_hu_b6459a132609dc10.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_194405405_hu_f2dc1faa41d41937.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_194405405.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_194405405_hu_b97b96b59c0edc2f.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240723_194405405_hu_7dfca60c24f11b02.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_103313492_HDR.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_103313492_HDR.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_103313492_HDR_hu_d02df5ec1ea9bdcc.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_103313492_HDR_hu_15e34bc578e9555f.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_103313492_HDR.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_103313492_HDR_hu_9bcbc53e147bffbb.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_103313492_HDR_hu_fc2d953ad60f1108.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_141906832_HDR.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_141906832_HDR.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_141906832_HDR_hu_e1ea4b87a5ea0ecd.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_141906832_HDR_hu_7090d76e81823216.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_141906832_HDR.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_141906832_HDR_hu_7aac34f5634b9e62.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_141906832_HDR_hu_c0b86a0ecd468dc9.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_183851617_HDR.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_183851617_HDR.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_183851617_HDR_hu_682c2682b26b8f0f.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_183851617_HDR_hu_ae9a6d7d7923447c.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_183851617_HDR.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_183851617_HDR_hu_aa9e3a64dfc35573.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_183851617_HDR_hu_c183053d8fdf9389.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_191658360.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_191658360.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_191658360_hu_431ffa63701790f4.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_191658360_hu_ec8c21ad58400d03.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_191658360.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_191658360_hu_920ef1c97a312de8.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240724_191658360_hu_73d1992f218767a8.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_110331375.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_110331375.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_110331375_hu_bc8e577a4a1d8f2c.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_110331375_hu_89c8876b9ec32668.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_110331375.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_110331375_hu_3cad7dd59305eb85.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_110331375_hu_ae235884c26582ef.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_145826860.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_145826860.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_145826860_hu_4c2e51a917c2025b.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_145826860_hu_870af68fd3959735.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_145826860.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_145826860_hu_ace0e46249a8e5cb.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_145826860_hu_99c4886c2a5372c5.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_183137388.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_183137388.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_183137388_hu_4d86bd8fd4160009.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_183137388_hu_9fb1ce52e7d4bf90.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_183137388.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_183137388_hu_1240264e349b3afc.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240725_183137388_hu_c84f11aed3e1bb81.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240726_122817723_HDR.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240726_122817723_HDR.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240726_122817723_HDR_hu_6651e953cd755440.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240726_122817723_HDR_hu_b27d44347c243b5a.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240726_122817723_HDR.jpg 2320w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240726_122817723_HDR_hu_d552c34445594045.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240726_122817723_HDR_hu_f48a3b087ac97163.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240726_180617379_HDR.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240726_180617379_HDR.jpg 1736w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240726_180617379_HDR_hu_38cb5ab897efb298.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240726_180617379_HDR_hu_4ee44e26a81b01d4.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240726_180617379_HDR.jpg 1736w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240726_180617379_HDR_hu_a49c52abb3750485.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240726_180617379_HDR_hu_fce477347d808f.jpg" /></a></li>
             
           
             
             
             
               <li><a href="http://localhost:1313/events/2024-07-slovinsko/IMG_20240727_092007824_HDR.jpg"
-                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240727_092007824_HDR.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240727_092007824_HDR_hu_afbf5c845c0c352b.jpg 2000w"
-                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240727_092007824_HDR_hu_a86873e7f8a7c39a.jpg" /></a></li>
+                  data-srcset="http://localhost:1313/events/2024-07-slovinsko/IMG_20240727_092007824_HDR.jpg 2104w, http://localhost:1313/events/2024-07-slovinsko/IMG_20240727_092007824_HDR_hu_cd62a000686b6c9e.jpg 2000w"
+                  data-fancybox="gallery"><img src="http://localhost:1313/events/2024-07-slovinsko/IMG_20240727_092007824_HDR_hu_13c6ad7c8757fe58.jpg" /></a></li>
             
           
             
