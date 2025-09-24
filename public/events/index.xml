@@ -6,8 +6,15 @@
     <description>Recent content in Events on My Bike Adventures</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Sep 2025 20:33:37 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 24 Sep 2025 21:13:37 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/events/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2005 08 Horal Alto Slovakia</title>
+      <link>http://localhost:1313/events/2004-08-horal/</link>
+      <pubDate>Wed, 24 Sep 2025 21:13:37 +0200</pubDate>
+      <guid>http://localhost:1313/events/2004-08-horal/</guid>
+      <description>&lt;p&gt;popis dodam neskor&lt;/p&gt;</description>
+    </item>
     <item>
       <title>2024 07 Slovinsko</title>
       <link>http://localhost:1313/events/2024-07-slovinsko/</link>
