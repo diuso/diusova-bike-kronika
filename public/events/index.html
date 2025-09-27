@@ -125,6 +125,17 @@
       
     
   
+
+  
+  
+  
+  
+    
+      
+        
+      
+    
+  
     
       
         
@@ -147,6 +158,108 @@
   
   
   
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
   
     
       
@@ -403,6 +516,9 @@
   
   
 
+  
+  
+
 <script>
 $(document).ready(function() {
 initMap();
@@ -411,6 +527,40 @@ initMap();
   
   
   function load_0 () {
+    var tracks = [];
+    var markers = [];
+    var latlngs = [];
+
+    
+
+    
+      
+        
+          latlngs.push(L.latLng( 46.553857 ,  11.799746 ));
+        
+      
+    
+
+    if (latlngs.length > 0) {
+      var pagebounds = L.latLngBounds(latlngs);
+      addBounds(pagebounds);
+      if (tracks.length === 0) {
+        markers.push([
+          pagebounds.getCenter(),
+           0 ,
+          '<strong><a href="http:\/\/localhost:1313\/events\/2018-07-dolomity\/">2018 07 Dolomity</a></strong>',
+        ]);
+      }
+    }
+
+    add(tracks, markers,  0 );
+  }
+
+  load_0();
+
+  
+  
+  function load_1 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -449,42 +599,8 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           0 ,
-          '<strong><a href="http:\/\/localhost:1313\/events\/2004-08-horal\/">2005 08 Horal Alto Slovakia</a></strong>',
-        ]);
-      }
-    }
-
-    add(tracks, markers,  0 );
-  }
-
-  load_0();
-
-  
-  
-  function load_1 () {
-    var tracks = [];
-    var markers = [];
-    var latlngs = [];
-
-    
-
-    
-      
-        
-          latlngs.push(L.latLng( 48.175022999999996 ,  16.978574 ));
-        
-      
-    
-
-    if (latlngs.length > 0) {
-      var pagebounds = L.latLngBounds(latlngs);
-      addBounds(pagebounds);
-      if (tracks.length === 0) {
-        markers.push([
-          pagebounds.getCenter(),
            1 ,
-          '<strong><a href="http:\/\/localhost:1313\/events\/2012-08-cesta-hrdinov-snp\/">2012 08 Cesta Hrdinov SNP</a></strong>',
+          '<strong><a href="http:\/\/localhost:1313\/events\/2004-08-horal\/">2005 08 Horal Alto Slovakia</a></strong>',
         ]);
       }
     }
@@ -497,6 +613,142 @@ initMap();
   
   
   function load_2 () {
+    var tracks = [];
+    var markers = [];
+    var latlngs = [];
+
+    
+
+    
+      
+        
+          latlngs.push(L.latLng( 49.414691999999995 ,  21.698795 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 49.40602 ,  21.677636 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 49.096243 ,  21.234734 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 48.775383 ,  20.984823000000002 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 48.779385 ,  20.8596 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 48.744801 ,  20.574734 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 48.88705 ,  20.110328000000003 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 48.88811 ,  20.096014999999998 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 48.860026000000005 ,  19.266263 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 48.831403 ,  19.021252999999998 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 48.739501000000004 ,  18.984792000000002 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 48.761723 ,  18.811389000000002 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 48.761723 ,  18.811389000000002 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 48.962285 ,  18.618182 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 48.925587 ,  18.293952 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 48.679265 ,  17.563801 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 48.175022999999996 ,  16.978574 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 48.859771 ,  19.264988 ));
+        
+      
+    
+
+    if (latlngs.length > 0) {
+      var pagebounds = L.latLngBounds(latlngs);
+      addBounds(pagebounds);
+      if (tracks.length === 0) {
+        markers.push([
+          pagebounds.getCenter(),
+           2 ,
+          '<strong><a href="http:\/\/localhost:1313\/events\/2012-08-cesta-hrdinov-snp\/">2012 08 Cesta Hrdinov SNP</a></strong>',
+        ]);
+      }
+    }
+
+    add(tracks, markers,  2 );
+  }
+
+  load_2();
+
+  
+  
+  function load_3 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -653,20 +905,20 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           2 ,
+           3 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2024-07-slovinsko\/">2024 07 Slovinsko</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  2 );
+    add(tracks, markers,  3 );
   }
 
-  load_2();
+  load_3();
 
   
   
-  function load_3 () {
+  function load_4 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -705,20 +957,20 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           3 ,
+           4 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2025-06-slovinsko\/">2025 06 05 Slovinsko</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  3 );
+    add(tracks, markers,  4 );
   }
 
-  load_3();
+  load_4();
 
   
   
-  function load_4 () {
+  function load_5 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -781,16 +1033,16 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           4 ,
+           5 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2025-08-27-polsko\/">2025 08 27 Polsko</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  4 );
+    add(tracks, markers,  5 );
   }
 
-  load_4();
+  load_5();
 
 finalizeMap();
 });
@@ -813,6 +1065,19 @@ finalizeMap();
 
 
 <ul style="columns: 1;">
+    
+        
+            <li>
+                <a href="http://localhost:1313/events/2018-07-dolomity/">
+                2025-09-27 | 
+                
+                    2018 07 Dolomity
+                
+                </a>
+                
+            
+            </li>
+        
     
         
             <li>
@@ -922,6 +1187,21 @@ finalizeMap();
         <div class="row h-100 p-0">
             <div class="col my-auto p-0">
                 <ul class="split-grid list-unstyled">
+                    
+                        
+                        
+                            
+                            
+                            
+                            <li>
+                                <a href="http://localhost:1313/events/2018-07-dolomity/"  title="2018 07 Dolomity">
+                                    
+                                        
+                                        2018 07 Dolomity
+                                    
+                                </a>
+                            </li>
+                        
                     
                         
                         

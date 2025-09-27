@@ -6,8 +6,15 @@
     <description>Recent content in Events on My Bike Adventures</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Sep 2025 21:13:37 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 27 Sep 2025 19:13:37 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/events/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2018 07 Dolomity</title>
+      <link>http://localhost:1313/events/2018-07-dolomity/</link>
+      <pubDate>Sat, 27 Sep 2025 19:13:37 +0200</pubDate>
+      <guid>http://localhost:1313/events/2018-07-dolomity/</guid>
+      <description>&lt;p&gt;MTB vylet do Dolomitov, aj s lanovkou velke prevysenia a kazdy den poobede burka. Aj tak fantasticke&lt;/p&gt;</description>
+    </item>
     <item>
       <title>2005 08 Horal Alto Slovakia</title>
       <link>http://localhost:1313/events/2004-08-horal/</link>
