@@ -6,8 +6,22 @@
     <description>Recent content in Events on My Bike Adventures</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Dec 2025 14:13:37 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 10 Feb 2026 20:33:37 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/events/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 07 Karnische Alpen</title>
+      <link>http://localhost:1313/events/2023-07-karnischealpen/</link>
+      <pubDate>Tue, 10 Feb 2026 20:33:37 +0200</pubDate>
+      <guid>http://localhost:1313/events/2023-07-karnischealpen/</guid>
+      <description>&lt;p&gt;az na jeden fajn pocasie&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2016 04 Toskansko</title>
+      <link>http://localhost:1313/events/2016-04-toskansko/</link>
+      <pubDate>Sat, 20 Dec 2025 14:13:37 +0200</pubDate>
+      <guid>http://localhost:1313/events/2016-04-toskansko/</guid>
+      <description></description>
+    </item>
     <item>
       <title>2017 04 Toskansko</title>
       <link>http://localhost:1313/events/2017-04-toskansko/</link>

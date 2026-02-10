@@ -2,13 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/events/2015-08-alpenx/</loc>
-    <lastmod>2025-12-04T20:13:37+02:00</lastmod>
+    <loc>http://localhost:1313/events/2023-07-karnischealpen/</loc>
+    <lastmod>2026-02-10T20:33:37+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/events/</loc>
-    <lastmod>2025-12-04T20:13:37+02:00</lastmod>
+    <lastmod>2026-02-10T20:33:37+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-10T20:33:37+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/events/2016-04-toskansko/</loc>
+    <lastmod>2025-12-20T14:13:37+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/events/2017-04-toskansko/</loc>
+    <lastmod>2025-12-14T14:13:37+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/events/2015-08-alpenx/</loc>
     <lastmod>2025-12-04T20:13:37+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/events/2011-08-alpencross/</loc>

@@ -185,6 +185,246 @@
       
     
   
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+        
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
+    
+      
+        
+      
+    
+  
 
   
   
@@ -1309,6 +1549,12 @@
   
   
 
+  
+  
+
+  
+  
+
 <script>
 $(document).ready(function() {
 initMap();
@@ -1317,6 +1563,292 @@ initMap();
   
   
   function load_0 () {
+    var tracks = [];
+    var markers = [];
+    var latlngs = [];
+
+    
+
+    
+      
+        
+          latlngs.push(L.latLng( 46.639908696944445 ,  12.232851189166666 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.76353061166667 ,  12.312146136111112 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.76884551194444 ,  12.352328964166666 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.60491625527778 ,  12.585313875833334 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.58891012638889 ,  12.593902571666668 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.64288002972222 ,  12.634198366666666 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.64072395583333 ,  12.659558718888889 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.645532778888885 ,  12.693491582222222 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.62743700888889 ,  12.701485610555554 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.62315880805556 ,  12.709458566666665 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.586183506944444 ,  12.78279836527778 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.590617996666666 ,  12.888335854444444 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.593308918055556 ,  12.896832841666667 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.59492978944445 ,  12.897722038888888 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.59492978944445 ,  12.897722038888888 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.589106205 ,  12.913288285833334 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.51968148361111 ,  12.990167501666665 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.502069995 ,  12.927238906944444 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.53959738388889 ,  13.115224151944444 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.56984469666667 ,  13.178544331388888 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.572080829444445 ,  13.177005356666665 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.57311179138889 ,  13.17892961611111 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.575305309722225 ,  13.183771839444445 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.57722418277778 ,  13.18697816388889 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.5879715325 ,  13.227833808055555 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.572551665000006 ,  13.235925455555554 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.56549646694444 ,  13.254824714166666 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.56113981805555 ,  13.304727440833334 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 46.58575474527778 ,  13.332685659444444 ));
+        
+      
+    
+
+    if (latlngs.length > 0) {
+      var pagebounds = L.latLngBounds(latlngs);
+      addBounds(pagebounds);
+      if (tracks.length === 0) {
+        markers.push([
+          pagebounds.getCenter(),
+           0 ,
+          '<strong><a href="http:\/\/localhost:1313\/events\/2023-07-karnischealpen\/">2023 07 Karnische Alpen</a></strong>',
+        ]);
+      }
+    }
+
+    add(tracks, markers,  0 );
+  }
+
+  load_0();
+
+  
+  
+  function load_1 () {
+    var tracks = [];
+    var markers = [];
+    var latlngs = [];
+
+    
+
+    
+      
+        
+          latlngs.push(L.latLng( 42.62618472333333 ,  12.109069818611111 ));
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 42.58322356 ,  12.115035425555556 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 42.58316489833334 ,  12.115560563055555 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 42.53689705222222 ,  12.027558820833335 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 42.70632586027778 ,  12.115123759444444 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 42.716797112500004 ,  12.11289592 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 42.8602814325 ,  11.682317294999999 ));
+        
+      
+    
+      
+        
+          latlngs.push(L.latLng( 42.62584586083334 ,  12.107550129444444 ));
+        
+      
+    
+
+    if (latlngs.length > 0) {
+      var pagebounds = L.latLngBounds(latlngs);
+      addBounds(pagebounds);
+      if (tracks.length === 0) {
+        markers.push([
+          pagebounds.getCenter(),
+           1 ,
+          '<strong><a href="http:\/\/localhost:1313\/events\/2016-04-toskansko\/">2016 04 Toskansko</a></strong>',
+        ]);
+      }
+    }
+
+    add(tracks, markers,  1 );
+  }
+
+  load_1();
+
+  
+  
+  function load_2 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -1397,20 +1929,20 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           0 ,
+           2 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2017-04-toskansko\/">2017 04 Toskansko</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  0 );
+    add(tracks, markers,  2 );
   }
 
-  load_0();
+  load_2();
 
   
   
-  function load_1 () {
+  function load_3 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -1611,20 +2143,20 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           1 ,
+           3 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2015-08-alpenx\/">2015 08 Alpencross</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  1 );
+    add(tracks, markers,  3 );
   }
 
-  load_1();
+  load_3();
 
   
   
-  function load_2 () {
+  function load_4 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -1813,20 +2345,20 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           2 ,
+           4 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2011-08-alpencross\/">2011 08 Alpencross</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  2 );
+    add(tracks, markers,  4 );
   }
 
-  load_2();
+  load_4();
 
   
   
-  function load_3 () {
+  function load_5 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -1919,20 +2451,20 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           3 ,
+           5 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2021-08-zbojska-zbehy\/">2021 08 Zbojska - Zbehy</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  3 );
+    add(tracks, markers,  5 );
   }
 
-  load_3();
+  load_5();
 
   
   
-  function load_4 () {
+  function load_6 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -2061,20 +2593,20 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           4 ,
+           6 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2017-07-decin-linz\/">2017 07 Decin Linz</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  4 );
+    add(tracks, markers,  6 );
   }
 
-  load_4();
+  load_6();
 
   
   
-  function load_5 () {
+  function load_7 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -2227,20 +2759,20 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           5 ,
+           7 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2018-07-dolomity\/">2018 07 Dolomity</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  5 );
+    add(tracks, markers,  7 );
   }
 
-  load_5();
+  load_7();
 
   
   
-  function load_6 () {
+  function load_8 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -2279,20 +2811,20 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           6 ,
+           8 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2004-08-horal\/">2005 08 Horal Alto Slovakia</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  6 );
+    add(tracks, markers,  8 );
   }
 
-  load_6();
+  load_8();
 
   
   
-  function load_7 () {
+  function load_9 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -2415,20 +2947,20 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           7 ,
+           9 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2012-08-cesta-hrdinov-snp\/">2012 08 Cesta Hrdinov SNP</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  7 );
+    add(tracks, markers,  9 );
   }
 
-  load_7();
+  load_9();
 
   
   
-  function load_8 () {
+  function load_10 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -2585,20 +3117,20 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           8 ,
+           10 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2024-07-slovinsko\/">2024 07 Slovinsko</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  8 );
+    add(tracks, markers,  10 );
   }
 
-  load_8();
+  load_10();
 
   
   
-  function load_9 () {
+  function load_11 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -2637,20 +3169,20 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           9 ,
+           11 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2025-06-slovinsko\/">2025 06 05 Slovinsko</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  9 );
+    add(tracks, markers,  11 );
   }
 
-  load_9();
+  load_11();
 
   
   
-  function load_10 () {
+  function load_12 () {
     var tracks = [];
     var markers = [];
     var latlngs = [];
@@ -2713,16 +3245,16 @@ initMap();
       if (tracks.length === 0) {
         markers.push([
           pagebounds.getCenter(),
-           10 ,
+           12 ,
           '<strong><a href="http:\/\/localhost:1313\/events\/2025-08-27-polsko\/">2025 08 27 Polsko</a></strong>',
         ]);
       }
     }
 
-    add(tracks, markers,  10 );
+    add(tracks, markers,  12 );
   }
 
-  load_10();
+  load_12();
 
 finalizeMap();
 });
@@ -2745,6 +3277,32 @@ finalizeMap();
 
 
 <ul style="columns: 1;">
+    
+        
+            <li>
+                <a href="http://localhost:1313/events/2023-07-karnischealpen/">
+                2026-02-10 | 
+                
+                    2023 07 Karnische Alpen
+                
+                </a>
+                
+            
+            </li>
+        
+    
+        
+            <li>
+                <a href="http://localhost:1313/events/2016-04-toskansko/">
+                2025-12-20 | 
+                
+                    2016 04 Toskansko
+                
+                </a>
+                
+            
+            </li>
+        
     
         
             <li>
@@ -2932,6 +3490,36 @@ finalizeMap();
         <div class="row h-100 p-0">
             <div class="col my-auto p-0">
                 <ul class="split-grid list-unstyled">
+                    
+                        
+                        
+                            
+                            
+                            
+                            <li>
+                                <a href="http://localhost:1313/events/2023-07-karnischealpen/"  title="2023 07 Karnische Alpen">
+                                    
+                                        
+                                        2023 07 Karnische Alpen
+                                    
+                                </a>
+                            </li>
+                        
+                    
+                        
+                        
+                            
+                            
+                            
+                            <li>
+                                <a href="http://localhost:1313/events/2016-04-toskansko/"  title="2016 04 Toskansko">
+                                    
+                                        
+                                        2016 04 Toskansko
+                                    
+                                </a>
+                            </li>
+                        
                     
                         
                         
