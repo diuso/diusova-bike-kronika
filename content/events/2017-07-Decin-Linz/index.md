@@ -4,6 +4,8 @@ draft = false
 title = '2017 07 Decin Linz'
 description = "Po zapadnej hranici Ciech"
 
+cover = "decinskysneznik.jpg"
+
 +++
 
 popis dodam neskor

@@ -4,6 +4,8 @@ draft = false
 title = '2025 06 05 Slovinsko'
 description = "Kratky vylet z Mariboru cez pohorie Pohorje."
 
+cover = "cover.jpg"
+
 +++
 
 

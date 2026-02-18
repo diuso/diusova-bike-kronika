@@ -1,48 +1,72 @@
+<style>
+    /* Force the caption to be visible all the time, not just on hover */
+    .c4-izmir figcaption {
+        opacity: 1 !important;
+        background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+        padding: 15px !important;
+        display: flex !important;
+        align-items: flex-end !important;
+    }
+
+    /* Make the title always visible and clean */
+    .c4-izmir h3 {
+        opacity: 1 !important;
+        transform: none !important;
+        margin: 0 !important;
+        font-size: 1.1rem !important;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        color: #fff !important;
+    }
+
+    /* Keep the zoom effect on the image itself, but not the text */
+    .c4-izmir:hover img {
+        transform: scale(1.1);
+    }
+</style>
+
 {{ $leafpages := partial "getleafpages.html" . }}
-{{ $leafpage := partial "getleafpage.html" . }}
 
-{{ $translate := false }}
-{{ $key := false }}
-{{ if eq .Kind "taxonomy" }}
-    {{ $translate = true }}
-    {{ $key = .Data.Singular }}
-{{ end }}
-
-{{ if $leafpage }}
-    {{ $featured_image := partial "featureimage/bg.html" $leafpage }}
-    {{ if $featured_image }}
-<div class="col-lg-6 p-0" id="gallery-panel" style="background-image: url('{{ $featured_image }}');">
-    {{ else }}
 <div class="col-lg-6 p-0" id="gallery-panel">
-    {{ end }}
-{{ else }}
-<div class="col-lg-6 p-0" id="gallery-panel">
-{{ end }}
-
     <div class="container-fluid h-100 p-0">
         <div class="row h-100 p-0">
             <div class="col my-auto p-0">
                 <ul class="split-grid list-unstyled">
                     {{ range $leafpages }}
-                        {{ $leafpage := partial "getleafpage.html" . }}
-                        {{ if $leafpage }}
-                            {{ $thumbnail := partial "featureimage/thumbnail.html" $leafpage }}
-                            {{ $title := .Title }}
-                            {{ if $translate }}{{ $title = default .Title (i18n (printf "%s-%s" $key .Title)) }}{{ end }}
-                            <li>
-                                <a href="{{ .Permalink }}" {{ if $thumbnail }}class="c4-izmir"{{ end }} title="{{ $title }}">
-                                    {{ if $thumbnail }}
-                                        <img src="{{ $thumbnail }}" alt="{{ $title }}" />
-                                        <figcaption><h3>{{ $title }}</h3></figcaption>
-                                    {{ else }}
-                                        {{ warnf "Could not find featured image thumbnail for %s (%s)" .RelPermalink .Kind}}
-                                        {{ $title }}
+                        {{/* 1. Define Variables */}}
+                        {{ $title := .Title }}
+                        {{ $link := .Permalink }}
+                        {{ $cover := .Params.cover }}
+                        {{ $thumbnail := "" }}
+
+                        {{/* 2. Image Logic: Look in the folder for the filename in 'cover' */}}
+                        {{ if $cover }}
+                            {{ $image := .Resources.GetMatch $cover }}
+                            {{ if $image }}
+                                {{/* If found, crop it to a 3:2 landscape thumbnail */}}
+                                {{ $processed := $image.Fill "600x400 center" }}
+                                {{ $thumbnail = $processed.RelPermalink }}
+                            {{ end }}
+                        {{ end }}
+
+                        <li>
+                            {{ if $thumbnail }}
+                                {{/* Display the image using theme's Izmir hover effect */}}
+                                <a href="{{ $link }}" class="c4-izmir c4-border-cc-3 c4-image-zoom-in" title="{{ $title }}">
+                                    <img src="{{ $thumbnail }}" alt="{{ $title }}" style="width:100%; height:auto; display:block;" />
+                                    <figcaption class="c4-layout-bottom-left">
+                                        <h3 class="c4-izmir-title">{{ $title }}</h3>
+                                    </figcaption>
+                                </a>
+                            {{ else }}
+                                {{/* Fallback: Gray box if the image file is missing or misspelled */}}
+                                <a href="{{ $link }}" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 180px; background: #222; color: #666; text-decoration: none; border: 1px solid #333; margin: 2px;">
+                                    <span style="font-size: 0.9rem; font-weight: bold;">{{ $title }}</span>
+                                    {{ if $cover }}
+                                        <span style="font-size: 0.7rem; opacity: 0.5;">(Missing: {{ $cover }})</span>
                                     {{ end }}
                                 </a>
-                            </li>
-                        {{ else }}
-                            {{ warnf "Could not find pages for %s (%s)" .RelPermalink .Kind}}
-                        {{ end }}
+                            {{ end }}
+                        </li>
                     {{ end }}
                     <li></li>
                 </ul>
