@@ -18,7 +18,6 @@
 {{ else if eq .Kind "section" }}
     {{ $showDate = true }}
 {{ else if eq .Kind "home" }}
-    {{ $showDate = true }}
     {{ $showSection = gt (len $.Site.Sections) 1 }}
     {{ if $.Site.Params.paginate }}
         {{ $maxlistlen = $.Site.Params.paginate }}

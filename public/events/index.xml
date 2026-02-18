@@ -65,13 +65,6 @@
       <description>&lt;p&gt;MTB vylet do Dolomitov, aj s lanovkou velke prevysenia a kazdy den poobede burka. Aj tak fantasticke&lt;/p&gt;</description>
     </item>
     <item>
-      <title>2005 08 Horal Alto Slovakia</title>
-      <link>http://localhost:1313/events/2004-08-horal/</link>
-      <pubDate>Wed, 24 Sep 2025 21:13:37 +0200</pubDate>
-      <guid>http://localhost:1313/events/2004-08-horal/</guid>
-      <description>&lt;p&gt;popis dodam neskor&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>2012 08 Cesta Hrdinov SNP</title>
       <link>http://localhost:1313/events/2012-08-cesta-hrdinov-snp/</link>
       <pubDate>Wed, 24 Sep 2025 21:13:37 +0200</pubDate>
@@ -97,6 +90,13 @@
       <link>http://localhost:1313/events/2025-08-27-polsko/</link>
       <pubDate>Mon, 22 Sep 2025 21:33:37 +0200</pubDate>
       <guid>http://localhost:1313/events/2025-08-27-polsko/</guid>
+      <description>&lt;p&gt;popis dodam neskor&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2005 08 Horal Alto Slovakia</title>
+      <link>http://localhost:1313/events/2004-08-horal/</link>
+      <pubDate>Thu, 25 Aug 2005 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/events/2004-08-horal/</guid>
       <description>&lt;p&gt;popis dodam neskor&lt;/p&gt;</description>
     </item>
   </channel>

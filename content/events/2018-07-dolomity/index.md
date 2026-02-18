@@ -1,5 +1,5 @@
 +++
-date = '2025-09-27T19:13:37+02:00'
+date = 2018-07-04
 draft = false
 title = '2018 07 Dolomity'
 description = "MTB vylet do Dolomitov"

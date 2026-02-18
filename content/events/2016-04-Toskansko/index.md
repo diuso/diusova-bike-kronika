@@ -1,5 +1,5 @@
 +++
-date = '2025-12-20T14:13:37+02:00'
+date = 2016-04-20
 draft = false
 title = '2016 04 Toskansko'
 description = "Cestakova akcia na zaciatok sezony"
